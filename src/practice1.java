@@ -9,11 +9,12 @@ public class practice1 {
 
         size = scanner.nextInt();
         input = scanner.next();
+        char[] cNum = input.toCharArray();
 
-
-
-        for(int i =0; i<input.length();i++){
-            sum+=input.charAt(i);
+        for(int i =0; i<cNum.length;i++){
+            sum+=cNum[i]-'0';
         }
+
+        System.out.println(sum);
     }
 }
