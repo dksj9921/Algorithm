@@ -15,6 +15,13 @@ public class practice3 {
             sum += dataArray[i];
             sumAarray[i] = sum;
         }
+        int [] intPutArray = new int[sumSize*2];
+        for(int i = 0; i<sumSize*2-1; i++){
+            intPutArray[i] = scanner.nextInt();
+            if(i%2==1){
+                System.out.println(sumAarray[intPutArray[i]]-sumAarray[intPutArray[i-1]]);
+            }
+        }
 
 
 
