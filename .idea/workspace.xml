@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36ca0969-3e38-4175-8d5c-33b4b240d15d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/practice8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,11 +119,6 @@
           <url>file://$PROJECT_DIR$/src/practice6.java</url>
           <line>10</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/practice7.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
