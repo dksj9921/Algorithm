@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="36ca0969-3e38-4175-8d5c-33b4b240d15d" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/practice10.java" afterDir="false" />
-
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,12 +115,10 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-
           <url>file://$PROJECT_DIR$/src/practice6.java</url>
           <line>10</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
-
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
