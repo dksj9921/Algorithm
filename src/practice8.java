@@ -1,49 +1,60 @@
+import javax.imageio.IIOException;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class practice8 {
     //좋은 수 구하기
-    public static void main(String Args[]){
+    public static void main(String Args[]) throws NumberFormatException, IOException {
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        int arrNum = scanner.nextInt();
+//
 
-        int arrNum = scanner.nextInt();
 
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int arrNum = Integer.parseInt(bf.readLine());
         int arr[] = new int[arrNum];
 
-        for(int i = 0;i<arrNum;i++){
-            arr[i] = scanner.nextInt();
+        StringTokenizer st = new StringTokenizer(bf.readLine());
+
+        for(int i=0; i<arrNum; i++){
+            arr[i] = Integer.parseInt(st.nextToken());
         }
+
         Arrays.sort(arr);
 
-        int targetNum = arrNum - 1;
-        int endIndex = targetNum - 1, startIndex = 0, count = 0;
 
-        while(true){
-           if(targetNum == 1){
+        int endIndex = arrNum - 1, startIndex = 0, count = 0, i = 0;
 
-               System.out.println(count);
-               break;
-           }
 
-           if(endIndex<startIndex) {
-               targetNum --;
-               startIndex = 0;
-               endIndex =targetNum -1;
-               continue;
-           }
-           if(arr[endIndex] + arr[startIndex] == arr[targetNum]){
-               targetNum --;
-               count ++;
-               startIndex = 0;
-               endIndex = targetNum-1;
-           } else if (arr[endIndex] + arr[startIndex] > arr[targetNum]) {
-               endIndex --;
-           } else if (arr[startIndex] + arr[endIndex] < arr[targetNum]) {
-               startIndex ++;
-           }
+        while (i != arrNum) {
+
+                if (endIndex == startIndex) {
+                    startIndex = 0;
+                    endIndex = arrNum - 1;
+                    i++;
+                }
+                else if (i==startIndex) startIndex++;
+                else if (i==endIndex)endIndex--;
+                else if (i < arrNum && arr[startIndex] + arr[endIndex] == arr[i]) {
+                    count++;
+                    i++;
+                    startIndex = 0;
+                    endIndex = arrNum - 1;
+                } else if (i < arrNum && arr[startIndex] + arr[endIndex] > arr[i]) {
+                    endIndex--;
+                } else if (i < arrNum && arr[startIndex] + arr[endIndex] < arr[i]) {
+                    startIndex++;
+                }
 
         }
-
+        System.out.println(count);
+        bf.close();
     }
 }
+

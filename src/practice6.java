@@ -15,18 +15,16 @@ public class practice6 {
                 endIndex++;
                 sum += endIndex;
             }
-            if (sum > input) {
+            else if (sum > input) {
                 sum -= startIndex;
                 startIndex++;
             }
-            if (sum == input) {
+            else if (sum == input) {
                 endIndex ++;
                 sum += endIndex;
                 count++;
             }
-
         }
-
         System.out.println(count);
 
 
