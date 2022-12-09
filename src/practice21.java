@@ -5,30 +5,32 @@ import com.sun.source.doctree.SummaryTree;
 import java.io.*;
 import java.nio.BufferOverflowException;
 import java.time.temporal.Temporal;
+import java.util.StringTokenizer;
 
 
-public class practice20 {
+public class practice21 {
+    //버블 솔트 2
     static int N = 0;
+    static long count = 0;
 
     public static void main(String Args[]) throws NumberFormatException, IOException {
-        //Merge Sort
+        //버블 솔트 2 인데 거의 Marge sort
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         N = Integer.parseInt(bf.readLine());
 
+        StringTokenizer st = new StringTokenizer(bf.readLine());
+
         int arr[] = new int[N];
         int tempArr[] = new int[N];
 
         for (int i = 0; i < N; i++) {
-            arr[i] = Integer.parseInt(bf.readLine());
+            arr[i] = Integer.parseInt(st.nextToken());
         }
         MargeSort(arr, 0, N - 1, tempArr);
-        for (int i = 0; i < N; i++) {
-            bw.write(String.valueOf(arr[i]));
-            bw.write("\n");
-        }
 
+        bw.write(String.valueOf(count));
         bf.close();
         bw.flush();
 
@@ -54,6 +56,7 @@ public class practice20 {
         while (i <= end) {
             if (m + 1 <= end && tempArr[start] > tempArr[m + 1]) {
                 arr[i] = tempArr[m + 1];
+                count += (m+1-i);
                 m++;
             } else if (start < temp) {
                 arr[i] = tempArr[start];
