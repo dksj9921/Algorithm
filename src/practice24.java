@@ -5,6 +5,7 @@ import java.nio.Buffer;
 import java.util.ArrayList;
 
 public class practice24 {
+    //뭐였더라 아 신기한 수
      static int arr2[] = {1,3,5,7,9};
      static int N;
      static ArrayList<Integer> result = new ArrayList<>();
