@@ -1,3 +1,4 @@
+import javax.swing.plaf.IconUIResource;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,57 +6,39 @@ import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class practice40 {
-    public static void main(String Args[])throws NumberFormatException, IOException {
+    public static void main(String Args[]) throws NumberFormatException, IOException {
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(bf.readLine());
 
-        int T = Integer.parseInt(st.nextToken());
-        PriorityQueue<Node> myQueue;
+        long min = Long.parseLong(st.nextToken());
+        long max = Long.parseLong(st.nextToken());
 
-        for(int repeat = 0; repeat<T; repeat++) {
+        int size = (int) (max - min + 1);
 
-            st = new StringTokenizer(bf.readLine());
-            int N = Integer.parseInt(st.nextToken());
-            myQueue = new PriorityQueue<>();
+        long arr[] = new long[1000001];
 
-            for (int i = 0; i < N; i++) {
-                st = new StringTokenizer(bf.readLine());
-                int trash = Integer.parseInt(st.nextToken());
-                int start = Integer.parseInt(st.nextToken());
-                int end = Integer.parseInt(st.nextToken());
+        for (int i = 1; i < arr.length; i++) {
+            arr[i] = min + i - 1;
+        }
 
-                myQueue.add(new Node(start, end));
-            }
-
-            int endTime = 0;
-            int count = 0;
-            while (!myQueue.isEmpty()) {
-                Node temp = myQueue.poll();
-                if (temp.start >= endTime) {
-                    endTime = temp.end;
-                    count++;
+        for (int i = 2, j = 0; i < Math.sqrt(max); i++) {
+            int square = i * i;
+            for (int k = square; k < max; k = k + square) {
+                if(square>=arr[i]){
+                    arr[i] = 0;
                 }
             }
-
-            System.out.println(count);
-
         }
+        long count = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] != 0) count++;
+        }
+
+        System.out.println(count);
+
+
     }
 
-    static public class Node implements Comparable<Node>{
-        int start;
-        int end;
 
-        public Node(int start, int end){
-            this.start = start;
-            this.end = end;
-        }
-
-        @Override
-        public int compareTo(Node input){
-            if(input.end == this.end) return input.start<=this.start? 1:-1;
-            else return input.end>this.end? -1:1;
-        }
-    }
 }
