@@ -16,23 +16,19 @@ public class practice40 {
 
         int size = (int) (max - min + 1);
 
-        long arr[] = new long[1000001];
+        boolean arr[] = new boolean[size];
 
-        for (int i = 1; i < arr.length; i++) {
-            arr[i] = min + i - 1;
-        }
-
-        for (int i = 2, j = 0; i < Math.sqrt(max); i++) {
-            int square = i * i;
-            for (int k = square; k < max; k = k + square) {
-                if(square>=arr[i]){
-                    arr[i] = 0;
-                }
+        for (long i = 2; i * i <= max; i++) {
+            long square = i * i;
+            long start_Index = min / square;
+            if (min % square != 0) start_Index++;
+            for (long k = start_Index; k * square <= max; k++) {
+                arr[(int) ((k * square) - min)] = true;
             }
         }
         long count = 0;
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] != 0) count++;
+        for (int i = 0; i <= max - min; i++) {
+            if (!arr[i]) count++;
         }
 
         System.out.println(count);
