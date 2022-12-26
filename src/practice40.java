@@ -24,12 +24,14 @@ public class practice40 {
 
         for (int i = 2, j = 0; i < Math.sqrt(max); i++) {
             int square = i * i;
+            if(arr[j]>=i){
+                j++;
+            }
             for (int k = square; k < max; k = k + square) {
-                if(square>=arr[i]){
-                    arr[i] = 0;
-                }
+                if(arr[j] == k) arr[j] = 0;
             }
         }
+
         long count = 0;
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] != 0) count++;
