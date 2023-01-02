@@ -45,6 +45,7 @@ public class practice49 {
         myQueue.add(index);
         while (!myQueue.isEmpty()) {
             Node node = myQueue.poll();
+            if(node.A == 0) answer.add(sum - (node.A + node.B));
             if (!visited[node.A][node.B]) {
                 visited[node.A][node.B] = true;
 
@@ -52,7 +53,7 @@ public class practice49 {
                 int B_Left = node.B;
                 int C_Left = sum - (A_Left + B_Left);
 
-                if (node.A != 0) {
+                if (A_Left != 0) {
                     if (A_Left <= (arr[1] - B_Left)) {
                         myQueue.add(new Node(0, (B_Left + A_Left)));
                     } else {
@@ -67,7 +68,7 @@ public class practice49 {
 
                 } else answer.add(C_Left);
 
-                if (node.B != 0) {
+                if (B_Left != 0) {
                     if (B_Left <= (arr[0] - A_Left)) {
                         myQueue.add(new Node(A_Left + B_Left, 0));
                     } else {
