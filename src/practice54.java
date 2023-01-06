@@ -12,7 +12,7 @@ public class practice54 {
         int N = Integer.parseInt(bf.readLine());
 
         StringTokenizer st;
-        List<Node> building[] = new List[N + 1];
+        List<Integer> building[] = new List[N + 1];
         int time[] = new int[N + 1];
         int answer[] = new int[N + 1];
         int count[] = new int[N + 1];
@@ -26,11 +26,12 @@ public class practice54 {
             st = new StringTokenizer(bf.readLine());
 
             time[i] = Integer.parseInt(st.nextToken());
+
             while (true) {
                 int temp = Integer.parseInt(st.nextToken());
 
                 if (temp != -1) {
-                    building[temp].add(new Node(i, false));
+                    building[temp].add(i);
                     count[i]++;
                 } else break;
             }
@@ -41,40 +42,21 @@ public class practice54 {
             isFinished = false;
             for (int i = 1; i <= N; i++) {
                 if (count[i] == 0 && !visited[i]) {
-                    answer[i] += time[i];
-                    isFinished = true;
-                    for (Node k : building[i]) {
-                        if (!visited[i] && !k.isCount) {
-                            answer[k.index] = answer[i] + answer[k.index];
-                            k.ChangeIsCount();
-                        }
-                        count[k.index]--;
+                    for (int k : building[i]) {
+                        answer[k] = Math.max(answer[k], time[i] + answer[i]);
+                        count[k]--;
                     }
                     visited[i] = true;
+                    isFinished = true;
                 }
             }
-            if (!isFinished) {
-                break;
-            }
+            if (!isFinished) break;
         }
 
         for (int i = 1; i < N + 1; i++) {
-            System.out.println(answer[i]);
+            System.out.println(answer[i]+time[i]);
+
         }
+
     }
-
-    public static class Node {
-        int index;
-        boolean isCount;
-
-        public Node(int index, boolean isCount) {
-            this.index = index;
-            this.isCount = false;
-        }
-
-        public void ChangeIsCount(){
-            this.isCount = true;
-        }
-    }
-
 }
