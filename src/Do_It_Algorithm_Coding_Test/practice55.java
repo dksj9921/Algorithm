@@ -16,12 +16,12 @@ public class practice55 {
 
         int arrival_TimeArr[] = new int[N + 1];
         List<Node> route[] = new List[N + 1];
-        int arrival_CountArr[] = new int[N + 1];
-
+        List<Node> route_Reverse[] = new List[N + 1];
         Queue<Integer> myQueue = new LinkedList<>();
 
         for (int i = 1; i < N + 1; i++) {
             route[i] = new ArrayList<>();
+            route_Reverse[i] = new ArrayList<>();
         }
 
         int count[] = new int[N + 1];
@@ -34,6 +34,7 @@ public class practice55 {
             int temp_Arrival_Time = Integer.parseInt(st.nextToken());
 
             route[start].add(new Node(end, temp_Arrival_Time));
+            route_Reverse[end].add(new Node(start, temp_Arrival_Time));
             count[end]++;
         }
         st = new StringTokenizer(bf.readLine());
@@ -50,11 +51,6 @@ public class practice55 {
                 int temp = arrival_TimeArr[next.index];
                 arrival_TimeArr[next.index] = Math.max(arrival_TimeArr[next.index], arrival_TimeArr[now] + next.arrival_Time);
 
-                if (arrival_TimeArr[next.index] == arrival_TimeArr[now] + next.arrival_Time) {
-                    if(arrival_TimeArr[next.index] == temp){
-                        arrival_CountArr[next.index] = arrival_CountArr[now] + arrival_CountArr[next.index] + 1;
-                    }else arrival_CountArr[next.index] = arrival_CountArr[now] + 1;
-                }
                 count[next.index]--;
                 if (count[next.index] == 0) {
                     myQueue.add(next.index);
@@ -62,8 +58,30 @@ public class practice55 {
             }
         }
 
+        myQueue = new LinkedList<>();
+
+        myQueue.add(end_node_index);
+        int reverse_Count = 0;
+
+        boolean visited[] = new boolean[N + 1];
+
+        while (!myQueue.isEmpty()) {
+            int now = myQueue.poll();
+
+            for (Node next : route_Reverse[now]) {
+                if (((arrival_TimeArr[next.index] + next.arrival_Time) == arrival_TimeArr[now])) {
+                    reverse_Count++;
+                    if (!visited[next.index]) {
+                        visited[next.index] = true;
+                        myQueue.add(next.index);
+                    }
+                }
+            }
+        }
+
+
         System.out.println(arrival_TimeArr[end_node_index]);
-        System.out.println(arrival_CountArr[end_node_index]);
+        System.out.println(reverse_Count);
     }
 
     public static class Node {
