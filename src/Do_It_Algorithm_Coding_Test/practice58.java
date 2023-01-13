@@ -7,6 +7,7 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class practice58 {
+    //k번째 최소거리 -> 현재 기량부족으로 코드를봐도 완벽하게 로직이 이해가 안됨. 나중에 풀어보기
     public static void main(String[] args) throws NumberFormatException, IOException {
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
