@@ -1,0 +1,23 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç¸Ğşûÿÿÿÿ
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ìÜÙ°ıÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬ñ±ìùÿÿÿÿ
+Y
+java:S1854">Remove this useless assignment to local variable "weight_Arr".(Ç¸Ğşûÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "myQueue".(ä÷¡
+K
+java:S1854"5Remove this useless assignment to local variable "k".(Ôªø
+<
+java:S1481"&Remove this unused "k" local variable.(Ôªø
+@
+java:S1197"*Move the array designators [] to the type.(¦¶ìô
+B
+java:S1481",Remove this unused "myQueue" local variable.(ä÷¡
+E
+java:S1197"*Move the array designators [] to the type.(Ç¸Ğşûÿÿÿÿ
+J
+java:S1481"/Remove this unused "weight_Arr" local variable.(Ç¸Ğşûÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(­ËÖşÿÿÿÿ
+>
+java:S1659."#Declare "value" on a separate line.(ÎÕÊëüÿÿÿÿ
