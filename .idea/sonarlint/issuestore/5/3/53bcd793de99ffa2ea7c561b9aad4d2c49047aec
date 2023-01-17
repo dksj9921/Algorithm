@@ -1,0 +1,25 @@
+
+D
+java:S1121N".Extract the assignment out of this expression.(Õ‚Ã
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšŸüÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¹÷
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ÕÕ­øÿÿÿÿ
+m	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡»ñ®8µºßÇÛ0
+f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÚ§ç
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‰¬
+k	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã§üáüÿÿÿÿ
+f	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œı¢ª
+k	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İù¥²øÿÿÿÿ
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÈÌšùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬ñ±ìùÿÿÿÿ
+E
+java:S1197
+"*Move the array designators [] to the type.(æì€óùÿÿÿÿ
+]	java:S125-"<This block of commented-out lines of code should be removed.(×ÑÖ£şÿÿÿÿ8ô‘ĞÈÛ0
+T	java:S1063"9Replace this use of System.out or System.err by a logger.(ÏÛ·8ĞÌ»ÈÛ0
+t
+java:S1210@"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(àüæ„úÿÿÿÿ
+[
+java:S16597"@Declare "end" and all following declarations on a separate line.(›ûÿÿÿÿÿ
+h	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¢”Òşÿÿÿÿ
+c	java:S100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¸­±

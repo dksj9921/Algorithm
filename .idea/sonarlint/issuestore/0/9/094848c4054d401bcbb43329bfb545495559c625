@@ -1,0 +1,12 @@
+
+E
+java:S1066"/Merge this if statement with the enclosing one.(½ÑÈÀ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Ãí
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(©ş§Ì
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬ñ±ìùÿÿÿÿ
+m
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ù×©úÿÿÿÿ
+G
+java:S1197",Move the array designators [][] to the type.(ÁîßÛıÿÿÿÿ
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(é¼Ã´ùÿÿÿÿ8º‡ÌœÛ0
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8ƒÍœÛ0
