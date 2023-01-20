@@ -11,3 +11,5 @@ _
 /src/Do_It_Algorithm_Coding_Test/practice58.java,c\3\c39d79a5df53222ef76b84dce18cf2b9cd8c6d02
 S
 #src/Boot_Camp_Coding_Test/Day2.java,9\2\92034dc5cdc066197f0499466363e006df429868
+_
+/src/Do_It_Algorithm_Coding_Test/practice60.java,c\e\cebebfcefbbbd127c2d778c737ae29271fba1d9d

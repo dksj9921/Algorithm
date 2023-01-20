@@ -1,0 +1,32 @@
+
+J
+java:S3740N"/Provide the parametrized type for this generic.(™äıÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾ûå½
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûí•”
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À™¯/
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üšÃóùÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦–Ì÷
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂËÖ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Øœöıÿÿÿÿ
+f	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âıŒù
+f	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞŠñ„
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Æíµœşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬ñ±ìùÿÿÿÿ
+m
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ù×©úÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(¦–Ì÷
+E
+java:S1197"*Move the array designators [] to the type.(‘÷‡ şÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(ÂËÖ
+E
+java:S1197"*Move the array designators [] to the type.(”Øœöıÿÿÿÿ
+Q	java:S125;"<This block of commented-out lines of code should be removed.(À°¼
+E
+java:S1197P"*Move the array designators [] to the type.(‡˜À·úÿÿÿÿ
+N	java:S106m"9Replace this use of System.out or System.err by a logger.(åÚµ
+N	java:S106o"9Replace this use of System.out or System.err by a logger.(¯¼À
+N	java:S106p"9Replace this use of System.out or System.err by a logger.(ûößæ
+W
+java:S1659u"BDeclare "start" and all following declarations on a separate line.(”¶Ïu
