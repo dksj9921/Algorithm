@@ -32,7 +32,7 @@ public class practice70 {
                 b = temp - 'A';
             }else b = -1;
 
-            tree[i] = new Node(parent, a, b);
+            tree[parent] = new Node(parent, a, b);
         }
 
         myQueue = new LinkedList<>();
@@ -41,14 +41,34 @@ public class practice70 {
         for (int i = 0; i < N; i++) {
             int a = myQueue.poll();
             char b = (char)(a + 'A');
-            System.out.println(b);
+            System.out.print(b);
         }
+        System.out.println(" ");
 
+        myQueue = new LinkedList<>();
+        inorder(0);
+
+        for (int i = 0; i < N; i++) {
+            int a = myQueue.poll();
+            char b = (char)(a + 'A');
+            System.out.print(b);
+        }
+        System.out.println(" ");
+
+        myQueue = new LinkedList<>();
+        postorder(0);
+
+        for (int i = 0; i < N; i++) {
+            int a = myQueue.poll();
+            char b = (char)(a + 'A');
+            System.out.print(b);
+        }
 
     }
 
     private static void Preorder(int input) {
         myQueue.add(input);
+
         if (tree[input].left != -1) {
             Preorder(tree[input].left);
         }
@@ -56,6 +76,30 @@ public class practice70 {
         if (tree[input].right != -1) {
             Preorder(tree[input].right);
         }
+    }
+
+    private static void inorder(int input) {
+        if (tree[input].left != -1) {
+            inorder(tree[input].left);
+        }
+
+        myQueue.add(input);
+
+        if (tree[input].right != -1) {
+            inorder(tree[input].right);
+        }
+    }
+
+    private static void postorder(int input) {
+        if (tree[input].left != -1) {
+            postorder(tree[input].left);
+        }
+
+        if (tree[input].right != -1) {
+            postorder(tree[input].right);
+        }
+
+        myQueue.add(input);
     }
 
 
