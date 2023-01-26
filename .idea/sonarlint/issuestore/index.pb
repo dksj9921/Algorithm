@@ -1,17 +1,11 @@
 
-_
-/src/Do_It_Algorithm_Coding_Test/practice54.java,7\1\71a72cb6256ebfb79c172d8ddf93c637cd134d63
-_
-/src/Do_It_Algorithm_Coding_Test/practice55.java,f\f\ff97bd9e3d2fd8cfba630ee8f22ec41a9455d984
-_
-/src/Do_It_Algorithm_Coding_Test/practice56.java,3\8\382306b6ebcd63b9b1e969c39d0ac207c8dbf726
-_
-/src/Do_It_Algorithm_Coding_Test/practice57.java,2\4\249005bb130ecb1cb66054c43551bee13eb0e2e9
-_
-/src/Do_It_Algorithm_Coding_Test/practice58.java,c\3\c39d79a5df53222ef76b84dce18cf2b9cd8c6d02
-S
-#src/Boot_Camp_Coding_Test/Day2.java,9\2\92034dc5cdc066197f0499466363e006df429868
-_
-/src/Do_It_Algorithm_Coding_Test/practice60.java,c\e\cebebfcefbbbd127c2d778c737ae29271fba1d9d
-_
-/src/Do_It_Algorithm_Coding_Test/practice61.java,5\5\559e57789f42b17c9f4263bc4fde8c3b97e9f9af
+R
+"src/doitcodingtest/practice69.java,a\5\a57359122f73cc1262496e18d42126cff21df796
+R
+"src/doitcodingtest/practice70.java,1\2\128df28110dd04cbfef281c5fe9a54fb28ab9880
+X
+(src/bootcampcodingtest/섬의개수.java,f\f\ff6f5c044859056dcda605f3030c09d31e0c17a2
+R
+"src/doitcodingtest/practice72.java,3\d\3d272e8b3298787f14c8a78e76ea38aedda46340
+R
+"src/doitcodingtest/practice74.java,8\1\819036aa28ec4db43eb7dc1067d321355e7438eb

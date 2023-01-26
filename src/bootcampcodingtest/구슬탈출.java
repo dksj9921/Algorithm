@@ -12,7 +12,8 @@ public class 구슬탈출 {
     static int dy[] = {0, 1, 0, -1};
     static Point R;
     static Point B;
-    static boolean isFinished = false;
+    static boolean isFinishedR = false;
+    static boolean isFinishedB = false;
     static char arr[][];
     public static void main(String[] args) throws NumberFormatException, IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -27,34 +28,95 @@ public class 구슬탈출 {
             st = new StringTokenizer(bf.readLine());
             for (int j = 0; j < M + 2 ; j++) {
                 arr[i][j] = st.nextToken().charAt(0);
-            }
-        }
+                if(arr[i][j] == 'R'){
+                    R.x = i;
+                    R.y = j;
+                    arr[i][j] = '.';
+                }
 
-
-    }
-
-    private static void Move(int arr[][], Point R, Point B, int count) {
-        if(isFinished) return;
-
-        for (int i = 0; i < 4; i++) {
-            R.x = R.x + dx[i];
-            R.y = R.y + dy[i];
-            B.x = R.x + dx[i];
-            B.y = B.y + dy[i];
-
-            if (R.x != '#' && R.y != '#' && B.x != '#' && B.y != '#') {
-                if(arr[R.x][R.y] == 'O'){
-                    if (arr[B.x][B.y] == '0') {
-                        return;
-                    }
-                    isFinished = true;
-                    return;
+                if (arr[i][j] == 'B') {
+                    B.x = i;
+                    B.y = j;
+                    arr[i][j] = '.';
                 }
             }
-
         }
+        Point pointBox[] = new Point[2];
+        pointBox[0] = R;
+        pointBox[1] = B;
+        int count = 0;
+        Direction(pointBox, count);
+
+        if (isFinishedR) {
+            System.out.println("1");
+        }else System.out.println("0");
 
     }
+
+    private static void Direction(Point pointBox[], int count){
+        count++;
+        for (int i = 0; i < 4; i++) {
+            Point box[] = Move(i, pointBox);
+            if((count == 10 && !isFinishedR) || isFinishedB) return;
+            else if(isFinishedR) return;
+
+            Direction(box, count);
+        }
+    }
+
+    private static Point[] Move(int direction, Point pointBox[]) {
+        Point R = pointBox[0];
+        Point B = pointBox[1];
+
+        int directionX = dx[direction];
+        int directionY = dy[direction];
+
+        int i = 1;
+        boolean isBreak = false;
+
+        Point tempR = R;
+        Point tempB = B;
+        while (arr[tempR.x][tempR.y] != '#') {
+            tempR.x += i * directionX;
+            tempR.y += i * directionY;
+            if (tempR.x == B.x || tempR.y == B.y) {
+                isBreak = true;
+            }
+        }
+
+        tempR.x -= directionX;
+        tempR.y -= directionY;
+
+        if(isBreak) {
+            tempR.x -= directionX;
+            tempR.y -= directionY;
+        }
+
+        isBreak = false;
+        while (arr[tempB.x][tempB.y] != '#') {
+            tempB.x += i * directionX;
+            tempB.y += i * directionY;
+            if (tempB.x == R.x || tempB.y == R.y) {
+                isBreak = true;
+            }
+        }
+
+        tempB.x -= directionX;
+        tempB.y -= directionY;
+
+        if(isBreak) {
+            tempB.x -= directionX;
+            tempB.y -= directionY;
+        }
+
+        pointBox[0] = tempR;
+        pointBox[1] = tempB;
+        return pointBox;
+    }
+
+
+
+
 
 
 
