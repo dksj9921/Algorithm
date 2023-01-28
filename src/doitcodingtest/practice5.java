@@ -9,8 +9,8 @@ public class practice5 {
         long sum = 0, count = 0;
         int arrSize = scanner.nextInt();
         int target = scanner.nextInt();
-        long arr[] = new long[arrSize];
-        long sumArr[] = new long[arrSize];
+        long[] arr = new long[arrSize];
+        long[] sumArr = new long[arrSize];
 
         for(int i = 0; i<arrSize; i++){
             arr[i] = scanner.nextInt();
