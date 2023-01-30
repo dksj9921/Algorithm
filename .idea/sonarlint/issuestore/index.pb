@@ -7,5 +7,3 @@ X
 (src/bootcampcodingtest/섬의개수.java,f\f\ff6f5c044859056dcda605f3030c09d31e0c17a2
 R
 "src/doitcodingtest/practice72.java,3\d\3d272e8b3298787f14c8a78e76ea38aedda46340
-R
-"src/doitcodingtest/practice74.java,8\1\819036aa28ec4db43eb7dc1067d321355e7438eb

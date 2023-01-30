@@ -12,8 +12,8 @@ public class 구슬탈출 {
     static int[] dy = {0, 1, 0, -1};
     static Point R;
     static Point B;
-    static boolean isFinishedR = false;
-    static boolean isFinishedB = false;
+    static boolean isRealFinishedR = false;
+    static boolean isRealFinishedB = false;
     static char[][] arr;
     static Point target;
 
@@ -32,22 +32,22 @@ public class 구슬탈출 {
                 arr[i][j] = temp[j];
                 if (arr[i][j] == 'R') {
                     R = new Point();
-                    R.x = i;
-                    R.y = j;
+                    R.x = j;
+                    R.y = i;
                     arr[i][j] = '.';
                 }
 
                 if (arr[i][j] == 'B') {
                     B = new Point();
-                    B.x = i;
-                    B.y = j;
+                    B.x = j;
+                    B.y = i;
                     arr[i][j] = '.';
                 }
 
                 if (arr[i][j] == 'O') {
                     target = new Point();
-                    target.x = i;
-                    target.y = j;
+                    target.x = j;
+                    target.y = i;
                 }
             }
         }
@@ -55,22 +55,29 @@ public class 구슬탈출 {
         pointBox[0] = R;
         pointBox[1] = B;
         int count = 0;
-        Direction(pointBox, count);
+        Direction(pointBox, count, false, false);
 
-        if (isFinishedR) {
+        if (isRealFinishedR) {
             System.out.println("1");
         } else System.out.println("0");
 
     }
 
-    private static void Direction(Point[] pointBox, int count) {
+    private static void Direction(Point[] pointBox, int count, boolean isFinishedR, boolean isFinishedB) {
         count++;
         for (int i = 0; i < 4; i++) {
             Point[] box = Move(i, pointBox);
-            if ((count == 10 && !isFinishedR) || isFinishedB) return;
-            else if (isFinishedR) return;
 
-            Direction(box, count);
+            if(isFinishedR && isFinishedB){
+                continue;
+            } else if(!isFinishedB && isFinishedR){
+                isRealFinishedR = true;
+                continue;
+            } else if (isFinishedB) {
+                continue;
+            }
+
+            Direction(box, count, isFinishedR, isFinishedB);
         }
     }
 
@@ -88,47 +95,49 @@ public class 구슬탈출 {
         tempR = R;
         Point tempB;
         tempB = B;
-        while (arr[tempR.x][tempR.y] != '#') {
-            tempR.x += i * directionX;
-            tempR.y += i * directionY;
-            if (tempR.x == B.x || tempR.y == B.y) {
+        while (arr[tempR.y][tempR.x] != '#') {
+            tempR.x += directionX;
+            tempR.y += directionY;
+            if (tempR.x == B.x && tempR.y == B.y) {
                 isBreak = true;
-                break;
             }
 
-            if(tempR.x == target.x || tempR.y == target.y) {
-                isFinishedR = true;
+            if(tempR.x == target.x && tempR.y == target.y) {
+                isRealFinishedR = true;
             }
         }
 
-        tempR.x -= directionX;
-        tempR.y -= directionY;
+        tempR.x -= dx[direction];
+        tempR.y -= dy[direction];
 
         if (isBreak) {
-            tempR.x -= directionX;
-            tempR.y -= directionY;
+            tempR.x -= dx[direction];
+            tempR.y -= dy[direction];
         }
+
+        i = 1;
 
         isBreak = false;
-        while (arr[tempB.x][tempB.y] != '#') {
-            tempB.x += i * directionX;
-            tempB.y += i * directionY;
-            if (tempB.x == R.x || tempB.y == R.y) {
+        while (arr[tempB.y][tempB.x] != '#') {
+            tempB.x += directionX;
+            tempB.y += directionY;
+            if (tempB.x == R.x && tempB.y == R.y) {
                 isBreak = true;
-                break;
             }
 
-            if(tempB.x == target.x || tempB.y == target.y) {
-                isFinishedB = true;
+            if(tempB.x == target.x && tempB.y == target.y) {
+                isRealFinishedB = true;
             }
+
+            i++;
         }
 
-        tempB.x -= directionX;
-        tempB.y -= directionY;
+        tempB.x -= dx[direction];
+        tempB.y -= dy[direction];
 
         if (isBreak) {
-            tempB.x -= directionX;
-            tempB.y -= directionY;
+            tempB.x -= dx[direction];
+            tempB.y -= dy[direction];
         }
 
         pointBox[0] = tempR;
