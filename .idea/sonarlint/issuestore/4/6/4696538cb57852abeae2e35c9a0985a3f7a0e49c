@@ -1,0 +1,13 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êî¦ıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšŸüÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¹÷
+k	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÊÒ…ÿÿÿÿÿ
+i
+java:S3008	"NRename this field "Max" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë¢Ûšşÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(Ûº÷ûÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(Ÿ¤ÕŒûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ûÄÏ
+h	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„„¿´üÿÿÿÿ

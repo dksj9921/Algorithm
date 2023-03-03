@@ -1,0 +1,18 @@
+
+f	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘²¼¨
+f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â“Ùþ
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ë”â
+k	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¢Ñåüÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(¿ÐÚÙûÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(ˆÚæ¯øÿÿÿÿ
+H
+java:S1481$"2Remove this unused "first_pointer" local variable.(‘²¼¨
+I
+java:S1481%"3Remove this unused "second_pointer" local variable.(Â“Ùþ
+H
+java:S1481&"2Remove this unused "start_pointer" local variable.(¥Ë”â
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(õ°†ø
+H
+java:S1128"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/
