@@ -1,0 +1,15 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšŸüÿÿÿÿ8•ÎÙâë0
+n	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(½¼Õùÿÿÿÿ8–ÎÙâë0
+t
+java:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 72 to the 15 allowed.(ù×©úÿÿÿÿ8ºÏÙâë0
+G
+java:S1197"*Move the array designators [] to the type.(‘¸Ş×8¿ÏÙâë0
+Z	java:S106s"9Replace this use of System.out or System.err by a logger.(¥Ã…Ñøÿÿÿÿ8ÂÏÙâë0
+Z	java:S106u"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ü»£ãë0
+Z	java:S106w"9Replace this use of System.out or System.err by a logger.(å­Ÿæÿÿÿÿÿ8ı»£ãë0
+Z	java:S106y"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8ÿ’¤ãë0
+Z	java:S106|"9Replace this use of System.out or System.err by a logger.(öš„Şøÿÿÿÿ8÷µªãë0
+I
+java:S1128",Remove this unused import 'java.nio.Buffer'.(î¦Ïî8ß¸¡ãë0

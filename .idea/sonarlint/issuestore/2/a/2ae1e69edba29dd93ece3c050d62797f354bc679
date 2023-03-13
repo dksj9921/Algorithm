@@ -1,0 +1,14 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜéÍå
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŸÎ
+a	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(õÔÖL
+E
+java:S1197"*Move the array designators [] to the type.(ÓŸ÷ÿûÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(õŒ²
+V	java:S125 "<This block of commented-out lines of code should be removed.(Ñ’†£ùÿÿÿÿ
+V	java:S125."<This block of commented-out lines of code should be removed.(åÃœöÿÿÿÿÿ
+V	java:S125>"<This block of commented-out lines of code should be removed.(ş¹èøüÿÿÿÿ
+P	java:S125B"<This block of commented-out lines of code should be removed.(å¼Ò
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(ô¤„å
+W
+java:S1128"ARemove this unused import 'javax.swing.plaf.basic.BasicButtonUI'.(Áá£Ó

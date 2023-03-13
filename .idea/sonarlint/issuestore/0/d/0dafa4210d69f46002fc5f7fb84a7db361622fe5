@@ -1,0 +1,35 @@
+
+J
+java:S1066]"/Merge this if statement with the enclosing one.(‘¯äıÿÿÿÿ
+y
+java:S1319&"dThe type of "pass" should be an interface such as "List" rather than the implementation "ArrayList".(Ô†©X
+k	java:S117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¢Ñåüÿÿÿÿ
+8
+java:S1643"Use a StringBuilder instead.(œÉ¦„úÿÿÿÿ
+h
+java:S1104""RMake nCount a static final constant or non-public and provide accessors if needed.(Àº•ı
+h
+java:S1104#"RMake mCount a static final constant or non-public and provide accessors if needed.(şÿÉ
+d
+java:S1104$"OMake Max a static final constant or non-public and provide accessors if needed.(õ•äl
+j
+java:S1104%"OMake arr a static final constant or non-public and provide accessors if needed.(™íäøÿÿÿÿ
+e
+java:S1104&"PMake pass a static final constant or non-public and provide accessors if needed.(Ô†©X
+m
+java:S1104'"WMake locationArr a static final constant or non-public and provide accessors if needed.(ó±‚ß
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ŒÏêüÿÿÿÿ
+b	java:S101!"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(™­¢×
+g
+java:S1223+"LRename this method to prevent any misunderstanding or make it a constructor.(Éò’Ùûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ô¤„å
+b	java:S116$"NRename this field "Max" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ•äl
+m
+java:S3776+"RRefactor this method to reduce its Cognitive Complexity from 66 to the 15 allowed.(Éò’Ùûÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(‰™Òùÿÿÿÿ
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(œ´­½ıÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+R
+java:S1117g"7Rename "Max" which hides the field declared at line 36.(Æ¢Ñåüÿÿÿÿ
+E
+java:S1197m"*Move the array designators [] to the type.(“ĞÅ‘şÿÿÿÿ

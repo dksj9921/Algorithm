@@ -1,0 +1,21 @@
+
+m	java:S135+"YReduce the total number of break and continue statements in this loop to use at most one.(Üâ«Q
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êî¦žýÿÿÿÿ
+f	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õŽƒé
+=
+java:S1659	""Declare "rows" on a separate line.(ÓÓˆÊùÿÿÿÿ
+G
+java:S1197",Move the array designators [][] to the type.(Úæ²¶ýÿÿÿÿ
+G
+java:S1197",Move the array designators [][] to the type.(ÅÄå†ûÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ùž×©úÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "visited".(¥¬õ¸
+M	java:S1068"9Replace this use of System.out or System.err by a logger.(¸ØïU
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ÞÐ¦ñùÿÿÿÿ
+c	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦§ƒÀ
+h
+java:S3776?"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¦§ƒÀ
+\
+java:S1659j"ADeclare "down" and all following declarations on a separate line.(£Ð§„ÿÿÿÿÿ
