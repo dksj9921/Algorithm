@@ -34,9 +34,13 @@ public class belt_robot {
                 firstRobotLocation++;
                 if(firstRobotLocation == arr.length){
                     firstRobotLocation -= arr.length;
-                }
+                }//첫번째 로봇 위치 변경
             }
-            for (int i = arr.length - 1; i > 0; i--) {
+            if (arr[N].isRobot) {
+                arr[N].isRobot = false;
+            }
+
+            for (int i = arr.length - 1; i > 0; i--) {//컨베이어벨트 이동
 
                 if (i == arr.length - 1) {
                     tempInt = arr[0].left;
@@ -52,17 +56,22 @@ public class belt_robot {
                     arr[i].isRobot = arr[i - 1].isRobot;
                     arr[i].left = arr[i - 1].left;
                 }
+
             }
 
-            for (int i = 0; i < arr.length; i++) {
-                int nowLocation = firstRobotLocation + i;
+            if (arr[N].isRobot) {
+                arr[N].isRobot = false;
+            }
+
+            for (int i = 0; i < arr.length; i++) {//로봇 한칸씩 앞으로 이동
+                int nowLocation = firstRobotLocation + i; //첫번째 로봇부터
                 if (nowLocation > arr.length - 1) {
                     nowLocation -= arr.length;
                 }
+                int nextLocation = nowLocation + 1;
                 if (arr[nowLocation].isRobot) {
-                    int nextLocation = nowLocation + 1;
-                    if (nextLocation == arr.length) {
-                        nextLocation = 0;
+                    if (nextLocation >= arr.length) {
+                        nextLocation -= arr.length;
                     }
 
                     if (!arr[nextLocation].isRobot && arr[nextLocation].left != 0) {
@@ -79,6 +88,9 @@ public class belt_robot {
                             leftCount++;
                         }
                     }
+                }
+                if (nextLocation == N && arr[nextLocation].isRobot) {
+                    arr[nextLocation].isRobot = false;
                 }
             }
 
@@ -98,6 +110,15 @@ public class belt_robot {
                 break;
             }
             count++;
+
+            for (int i = 0; i < arr.length; i++) {
+                System.out.printf("%7d", arr[i].left);
+            }
+            System.out.println();
+            for (int i = 0; i < arr.length; i++) {
+                System.out.printf("%7b", arr[i].isRobot);
+            }
+            System.out.println("");
         }
 
         System.out.println(count + 1);

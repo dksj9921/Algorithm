@@ -1,0 +1,54 @@
+
+o
+java:S2293#"YReplace the type specification in this constructor call with the diamond operator ("<>").(¾ğ†
+z
+java:S1319#"dThe type of "hashMap" should be an interface such as "Map" rather than the implementation "HashMap".(¾ğ†
+2
+java:S1643G"Use a StringBuilder instead.(Ôş¿Ù
+2
+java:S1643H"Use a StringBuilder instead.(§£ô
+2
+java:S1643y"Use a StringBuilder instead.(à¥ñÙ
+7
+java:S1643z"Use a StringBuilder instead.(é´Àãüÿÿÿÿ
+l
+java:S1104""QMake count a static final constant or non-public and provide accessors if needed.(†Í˜Åıÿÿÿÿ
+i
+java:S1104#"SMake hashMap a static final constant or non-public and provide accessors if needed.(¾ğ†
+f
+java:S1104$"PMake List a static final constant or non-public and provide accessors if needed.(±ËËÅ
+n
+java:S1104%"SMake myQueue a static final constant or non-public and provide accessors if needed.(Ş¬ä«øÿÿÿÿ
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(İÄ±åûÿÿÿÿ
+a	java:S101!"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(×ÿğD
+b
+java:S1223*"LRename this method to prevent any misunderstanding or make it a constructor.(©şü«
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ô¤„å
+d	java:S116$"ORename this field "List" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ËËÅ
+@
+java:S1197$"*Move the array designators [] to the type.(±ËËÅ
+G
+java:S1197&",Move the array designators [][] to the type.(•ü«‹ıÿÿÿÿ
+6
+java:S2129(" Remove this "String" constructor(ËÑš
+E
+java:S11972"*Move the array designators [] to the type.(ôÁÿñÿÿÿÿÿ
+b	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶œ±
+g
+java:S3776C"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(¶œ±
+O
+java:S1117D"9Rename "count" which hides the field declared at line 34.(æÕ¿¼
+6
+java:S2129E" Remove this "String" constructor(ß‰õ†
+E
+java:S1197Q"*Move the array designators [] to the type.(î‚òËùÿÿÿÿ
+G
+java:S1197R",Move the array designators [][] to the type.(èÇËóşÿÿÿÿ
+V	java:S125c"<This block of commented-out lines of code should be removed.(™“ªäøÿÿÿÿ
+B
+java:S1197l",Move the array designators [][] to the type.(¯Š¢Í
+6
+java:S2129v" Remove this "String" constructor(Ûâãí
+N	java:S106~"9Replace this use of System.out or System.err by a logger.(¨¨âè
+Q
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8¯‘®ê0
