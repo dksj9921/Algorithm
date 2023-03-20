@@ -1,0 +1,9 @@
+
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(µ°×åúÿÿÿÿ
+h	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è‚—Æúÿÿÿÿ
+m
+java:S3776*"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(è‚—Æúÿÿÿÿ
+h	java:S100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Æ‡‰ýÿÿÿÿ
+h	java:S100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(žëˆÙùÿÿÿÿ
+h	java:S100f"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©¬ß§ûÿÿÿÿ
+h	java:S100l"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ‚¥Ïüÿÿÿÿ
