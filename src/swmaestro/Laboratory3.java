@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.StringTokenizer;
 import java.util.Queue;
 
-public class Laboratory2 {
+public class Laboratory3 {
     static int arr[][];
     static int N, M;
     static int tempArr[][];
@@ -70,15 +70,11 @@ public class Laboratory2 {
     }
 
     static void Combination(int depth,  int start) {
-        System.gc();
         if (depth == M) {
 
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
                     tempArr[i][j] = arr[i][j];
-                    if (arr[i][j] == 2) {
-                        tempArr[i][j] = 0;
-                    }
                     tempVisited[i][j] = false;
                 }
             }
@@ -96,17 +92,20 @@ public class Laboratory2 {
                 }
             }
 
+            for (int i = 0; i < empty.size(); i++) {
+                Point now = empty.get(i);
+                tempArr[now.y][now.x] = -3;
+            }
+
             int tempMax = -1;
 
             boolean isNotFinished = false;
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
-
-                    if(!tempVisited[i][j] && tempArr[i][j] != -1 && tempArr[i][j] != -2){
+                    if(!tempVisited[i][j] && tempArr[i][j] != -1 && tempArr[i][j] != -2 && tempArr[i][j] != -3){
                         isNotFinished = true;
                         break;
                     }
-
                     if (tempMax < tempArr[i][j]) {
                         tempMax = tempArr[i][j];
                     }
@@ -126,7 +125,6 @@ public class Laboratory2 {
     }
 
     static void BFS(int nowX, int nowY) {
-        System.gc();
         Queue<Point> myQueue = new LinkedList<>();
 
         myQueue.add(new Point(nowX, nowY));
@@ -140,7 +138,7 @@ public class Laboratory2 {
                 int y = now.y + dy[i];
 
                 if (x >= 0 && x < N && y >= 0 && y < N) {
-                    if (tempArr[y][x] != -1 && tempArr[y][x] != -2) {
+                    if (tempArr[y][x] != -1 && tempArr[y][x] != -2 && tempArr[y][x] != -3) {
                         if(!tempVisited[y][x]){
                             tempArr[y][x] = tempArr[now.y][now.x] + 1;
                             myQueue.add(new Point(x, y));

@@ -1,0 +1,17 @@
+
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Ãí
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŸÎ
+f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒòïÖ
+@
+java:S1197"*Move the array designators [] to the type.(Óôò„
+B
+java:S1197",Move the array designators [][] to the type.(á¿±À
+V	java:S1259"<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ
+Q	java:S125]"<This block of commented-out lines of code should be removed.(‡ŞïÂ
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(ûÛÏçùÿÿÿÿ
+m
+java:S3776h"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(êûİÍøÿÿÿÿ
+E
+java:S1197i"*Move the array designators [] to the type.(ÅÈÄÂıÿÿÿÿ
+K
+java:S1128"5Remove this unused import 'java.awt.font.TextLayout'.(­È®

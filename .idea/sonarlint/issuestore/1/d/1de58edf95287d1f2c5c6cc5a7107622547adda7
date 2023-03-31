@@ -1,0 +1,12 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Êí‹Û8²˜àÕï0
+m
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Êí‹Û8û˜àÕï0
+G
+java:S1197"*Move the array designators [] to the type.(æ¤šˆ8û˜àÕï0
+i	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”òù8™àÕï0
+L
+java:S1197)"*Move the array designators [] to the type.(Ã·¼Èıÿÿÿÿ8‚™àÕï0
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(“ˆÔûÿÿÿÿÿ8ƒ™àÕï0
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8„™àÕï0
