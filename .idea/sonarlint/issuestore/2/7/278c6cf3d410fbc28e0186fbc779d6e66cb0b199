@@ -1,0 +1,24 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ι±µΑ8‹Τ£υξ0
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Σύζθÿÿÿÿÿ8Τ£υξ0
+i
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(π ¬ο8£Υ£υξ0
+i
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(π ¬ο8£Υ£υξ0
+<
+java:S1659"Declare "M" on a separate line.(π ¬ο8¤Υ£υξ0
+I
+java:S1197",Move the array designators [][] to the type.(αΏ±ΐ8¥Υ£υξ0
+L
+java:S1197"*Move the array designators [] to the type.(¤Υϋÿÿÿÿ8¦Υ£υξ0
+G
+java:S1197"*Move the array designators [] to the type.(Β¦Ρέ8§Υ£υξ0
+G
+java:S1197"*Move the array designators [] to the type.(‚ΆÒμ8§Υ£υξ0
+L
+java:S1197"*Move the array designators [] to the type.(ά®‡Βÿÿÿÿÿ8§Υ£υξ0
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(τ¤„ε8«Υ£υξ0
+o	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(θΡÿ¶ϋÿÿÿÿ8«Υ£υξ0
+]	java:S1257"<This block of commented-out lines of code should be removed.(Ν‡ÒΥύÿÿÿÿ8οΡ®υξ0

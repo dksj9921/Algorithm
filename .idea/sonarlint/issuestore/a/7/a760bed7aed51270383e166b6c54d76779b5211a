@@ -1,0 +1,9 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Êם‹Û8ּ÷ר׀ן0
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ֳם8־÷ר׀ן0
+m
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Êם‹Û8¼»ר׀ן0
+L
+java:S1197"*Move the array designators [] to the type.(†’ÿÿÿÿÿ8ֱ»ר׀ן0
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(Ú—חפתÿÿÿÿ8ִ»ר׀ן0
