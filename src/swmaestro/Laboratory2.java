@@ -107,7 +107,7 @@ public class Laboratory2 {
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
 //                    System.out.printf("%3d", tempArr[i][j]);
-                    if(tempVisited[]
+
                     if (tempMax < tempArr[i][j]) {
                         tempMax = tempArr[i][j];
                     }
