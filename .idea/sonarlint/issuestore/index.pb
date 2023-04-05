@@ -53,3 +53,9 @@ M
 src/swmaestro/LaserTower.java,a\7\a760bed7aed51270383e166b6c54d76779b5211a
 J
 src/swmaestro/Bracket.java,1\d\1de58edf95287d1f2c5c6cc5a7107622547adda7
+K
+src/swmaestro/BOJ_CCTV.java,c\d\cd43c923157bd3cc00a3762593299f8360500cef
+N
+src/swmaestro/BOJ_Iceberg.java,8\d\8d28f2c2ca17b4205eb2886a4c00df882b579ccd
+K
+src/swmaestro/BOJ_Dice.java,a\a\aa129cbbba03d639529a60b5949229f2798633b1
