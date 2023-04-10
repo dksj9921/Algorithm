@@ -29,3 +29,5 @@ N
 src/swmaestro/BOJ_Iceberg.java,8\d\8d28f2c2ca17b4205eb2886a4c00df882b579ccd
 K
 src/swmaestro/BOJ_Dice.java,a\a\aa129cbbba03d639529a60b5949229f2798633b1
+M
+src/swmaestro/BOJ_Cheese.java,b\7\b70a1e966c0c0b417dbd14fb35668ced47047266
