@@ -1,0 +1,21 @@
+
+z	java:S135="YReduce the total number of break and continue statements in this loop to use at most one.(οÿÿÿÿÿ8α‡έφ0
+i	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¤8α‡έφ0
+i
+java:S3008
+"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(π ¬ο8ςβ‡έφ0
+i
+java:S3008
+"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(π ¬ο8ςβ‡έφ0
+<
+java:S1659
+"Declare "M" on a separate line.(π ¬ο8σβ‡έφ0
+G
+java:S1659"%Declare "tempSum" on a separate line.(°θ¤ϋÿÿÿÿ8σβ‡έφ0
+N
+java:S1197",Move the array designators [][] to the type.(„εϋΎώÿÿÿÿ8φβ‡έφ0
+H
+java:S1197",Move the array designators [][] to the type.(£Ψ­+8φβ‡έφ0
+X	java:S125!"<This block of commented-out lines of code should be removed.(‡ήοΒ8ή®έφ0
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(‰Πσ8ώβ‡έφ0
+o	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ζγθύÿÿÿÿ8ώβ‡έφ0
