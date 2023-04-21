@@ -11,6 +11,7 @@ public class BOJ_CompetitiveContagion {
     static int arr[][];
     static int dx[] = {1, 0, -1, 0};
     static int dy[] = {0, 1, 0, -1};
+    static boolean visited[][];
     static ArrayList<Point> nextQueue = new ArrayList<>();
 
     public static void main(String[] args) throws NumberFormatException, IOException {
@@ -52,12 +53,14 @@ public class BOJ_CompetitiveContagion {
                 }
             });
 
+            visited = new boolean[N][N];
             nextQueue = new ArrayList<>();
 
             count++;
 
             for (int i = 0; i < myQueue.size(); i++) {
                 Point tempPoint = myQueue.get(i);
+                visited[tempPoint.y][tempPoint.x] = true;
                 Contagion(tempPoint);
             }
 
@@ -81,8 +84,9 @@ public class BOJ_CompetitiveContagion {
             int x = nowPoint.x + dx[i];
             int y = nowPoint.y + dy[i];
 
-            if (x >= 0 && x < N && y >= 0 && y < N) {
+            if (x >= 0 && x < N && y >= 0 && y < N && !visited[y][x]) {
                 if (arr[y][x] == 0) {
+                    visited[y][x] = true;
                     arr[y][x] = arr[nowPoint.y][nowPoint.x];
                     nextQueue.add(new Point(x, y));
                 }
