@@ -31,3 +31,5 @@ O
 src/swmaestro/BOJ_PuyoPuyo.java,2\4\243386464f70c8beecd22673c8760074de264e6e
 P
  src/swmaestro/BOJ_RainWater.java,8\6\86b3a1e2f47f3e9c79d416b71719f6d55f824302
+K
+src/swmaestro/BOJ_CCTV.java,c\d\cd43c923157bd3cc00a3762593299f8360500cef
